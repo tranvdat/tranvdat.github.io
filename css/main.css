@@ -27,6 +27,7 @@ html {
 
 body {
     background-color: #eeeeee;
+    position: relative;
 }
 
 p {
@@ -43,6 +44,66 @@ p {
     text-align: center !important;
 }
 
+.background-primary {
+    background-color: var(--bulma-primary-color) !important;
+}
+
+.background-info {
+    background-color: var(--bulma-info-color) !important;
+}
+
+.background-warning {
+    background-color: var(--bulma-warning-color) !important;
+}
+
+.background-danger {
+    background-color: var(--bulma-danger-color) !important;
+}
+
+.background-success {
+    background-color: var(--bulma-success-color) !important;
+}
+
+.color-primary {
+    color: var(--bulma-primary-color) !important;
+}
+
+.color-info {
+    color: var(--bulma-info-color) !important;
+}
+
+.color-warning {
+    color: var(--bulma-warning-color) !important;
+}
+
+.color-danger {
+    color: var(--bulma-danger-color) !important;
+}
+
+.color-success {
+    color: var(--bulma-success-color) !important;
+}
+
+.border-primary {
+    border-color: var(--bulma-primary-color) !important;
+}
+
+.border-info {
+    border-color: var(--bulma-info-color) !important;
+}
+
+.border-warning {
+    border-color: var(--bulma-warning-color) !important;
+}
+
+.border-danger {
+    border-color: var(--bulma-danger-color) !important;
+}
+
+.border-success {
+    border-color: var(--bulma-success-color) !important;
+}
+
 .d-none {
     display: none !important;
 }
@@ -55,9 +116,9 @@ p {
 #aside {
     background-color: var(--bulma-primary-color);
     width: 300px;
-    height: 100vh;
-
+    height: 100%;
     padding: 3.5rem 0;
+    position: fixed;
 }
 
 #aside .info img {
@@ -135,24 +196,35 @@ p {
     transform: scaleX(1);
 }
 
+/* Main CSS */
+
 #main {
     width: 100%;
-    padding: 5rem;
+    padding: 5rem 0 5rem 35rem;
 }
 
-#main #about .info {
-    margin: 30px 0;
+#main .info {
+    margin: 5rem 0;
+}
+
+#main .info h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+#main .info p {
+    padding: 4px;
+}
+
+#main #about {
+    margin: 5rem 0;
+    margin-bottom: 10rem;
 }
 
 #main #about .info h1 {
-    font-size: 4rem;
-    font-weight: 500;
     color: var(--bulma-success-color);
-    padding-bottom: 4rem;
-}
-
-#main #about .info p {
-    padding: 4px;
 }
 
 #main #about .box {
@@ -200,21 +272,6 @@ p {
     color: var(--text-color);
 }
 
-#main #about .box .item.item--primary {
-    color: var(--bulma-primary-color);
-    border-color: var(--bulma-primary-color);
-}
-
-#main #about .box .item.item--danger {
-    color: var(--bulma-danger-color);
-    border-color: var(--bulma-danger-color);
-}
-
-#main #about .box .item.item--warning {
-    color: var(--bulma-warning-color);
-    border-color: var(--bulma-warning-color);
-}
-
 #main #about .hire {
     background-color: var(--bulma-primary-color);
     padding: 1.5rem;
@@ -257,6 +314,50 @@ p {
 
 #main #about .project .item .desc p {
     font-size: 1.2rem;
+}
+
+#main #skills {
+    margin: 5rem 0;
+}
+
+#main #skills .info {
+    margin-bottom: 3rem;
+}
+
+#main #skills .progress .title {
+    font-weight: 300;
+}
+
+#main #skills .progress .progress-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 2rem 0;
+}
+
+#main #skills .progress .progress-wrap .percent {
+    position: absolute;
+    bottom: 8px;
+    left: var(--percent);
+    color: var(--bulma-primary-color);
+}
+
+#main #skills .progress .progress-wrap .progress-bar {
+    height: 8px;
+    background-color: var(--bulma-primary-color);
+    width: var(--percent);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#main #skills .progress .progress-wrap::after {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    background-color: var(--bulma-light-color);
+    bottom: 0;
 }
 
 @media (max-width: 1024px) {
