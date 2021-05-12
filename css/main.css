@@ -1,0 +1,270 @@
+:root {
+    --text-color: #333;
+    --black-color: #000;
+    --purple-color: #a84cb8;
+
+    --bulma-success-color: hsl(141, 53%, 53%);
+    --bulma-info-color: hsl(204, 86%, 53%);
+    --bulma-warning-color: hsl(48, 100%, 67%);
+    --bulma-danger-color: hsl(348, 100%, 61%);
+    --bulma-primary-color: hsl(171, 100%, 41%);
+    --bulma-dark-color: hsl(0, 0%, 21%);
+    --bulma-light-color: hsl(0, 0%, 96%);
+    --bulma-link-color: hsl(217, 71%, 53%);
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.content {
+    display: flex;
+}
+
+/* Aside CSS */
+#aside {
+    background-color: var(--bulma-primary-color);
+    width: 300px;
+    height: 100vh;
+
+    padding: 3.5rem 0;
+}
+
+#aside .info img {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: var(--bulma-light-color) 2px solid;
+}
+
+#aside .menu ul {
+    padding: 0;
+    padding-top: 2rem;
+}
+
+#aside .menu li {
+    list-style-type: none;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+#aside .menu li a{
+    text-transform: uppercase;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+#aside .menu li a::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bulma-link-color);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#aside .menu li:hover a, #aside .menu li.active a{
+    font-weight: 400;
+}
+
+#aside .menu li:hover a::after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#aside .menu li.active {
+    color: var(--green-color);
+}
+
+#aside .menu li.active a::after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#main {
+    width: 100%;
+    padding: 5rem;
+}
+
+#main #about .info {
+    margin: 30px 0;
+}
+
+#main #about .info h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: var(--bulma-success-color);
+    padding-bottom: 4rem;
+}
+
+#main #about .info p {
+    padding: 4px;
+}
+
+#main #about .box {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#main #about .box .item {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    width: 220px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 56px -8px rgb(0 0 0 / 17%);
+    -moz-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    -ms-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    -o-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 56px -8px rgb(0 0 0 / 17%);
+    color: var(--bulma-primary-color);
+    border-bottom: 2px solid var(--bulma-primary-color);
+    cursor: pointer;
+}
+
+#main #about .box .item:hover, #main #about .box .item.active {
+    -webkit-box-shadow: 0px 0px 56px -8px rgb(0 0 0 / 50%);
+    -moz-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.50);
+    -ms-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.50);
+    -o-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 0px 56px -8px rgb(0 0 0 / 50%);
+}
+
+#main #about .box .item .icon {
+    font-size: 5rem;
+    margin: 3rem 1rem;
+    font-weight: 300;
+}
+
+#main #about .box .item .name {
+    display: block;
+    font-size: 1.6rem;
+    margin: 2rem 1rem;
+    color: var(--text-color);
+}
+
+#main #about .box .item.item--primary {
+    color: var(--bulma-primary-color);
+    border-color: var(--bulma-primary-color);
+}
+
+#main #about .box .item.item--danger {
+    color: var(--bulma-danger-color);
+    border-color: var(--bulma-danger-color);
+}
+
+#main #about .box .item.item--warning {
+    color: var(--bulma-warning-color);
+    border-color: var(--bulma-warning-color);
+}
+
+#main #about .hire {
+    background-color: var(--bulma-primary-color);
+    padding: 1.5rem;
+    margin: 30px 0;
+}
+
+#main #about .hire p {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 300;
+}
+
+#main #about .project {
+    margin: 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#main #about .project .item {
+    display: flex;
+    width: 48%;
+    margin: 10px 0;
+    border: 1px solid var(--bulma-success-color);
+}
+
+#main #about .project .item .image img {
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+}
+
+#main #about .project .item .desc {
+    margin-left: 10px;
+}
+
+#main #about .project .item .desc h3 {
+    font-size: 1.6rem;
+}
+
+#main #about .project .item .desc p {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+    #main #about .box .item {
+        width: 100%;;
+    }
+
+    #main #about .project .item {
+        width: 100%;
+    }
+}
