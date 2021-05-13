@@ -28,10 +28,10 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a class="scrollTo" href="#about">About</a></li>
-                    <li><a class="scrollTo" href="#skills">Skills</a></li>
-                    <li><a class="scrollTo" href="#work-experience">Work Experience</a></li>
-                    <li><a class="scrollTo" href="#contact">Contact</a></li>
+                    <li class=""><a class="scrollTo" href="#about">About</a></li>
+                    <li class=""><a class="scrollTo" href="#skills">Skills</a></li>
+                    <li class=""><a class="scrollTo" href="#work-experience">Work Experience</a></li>
+                    <li class=""><a class="scrollTo" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </section>
@@ -43,56 +43,66 @@
                     <p>I'm a software developer from VietNamese.</p>
                 </div>
                 <div class="box">
-                    <div class="item active border-primary color-primary">
+                    <div class="item border-primary color-primary all" onclick="showProject('all')">
                         <span class="icon">
                             <i class="fas fa-desktop"></i>
                         </span>
                         <span class="name">Programming Profile</span>
                     </div>
-                    <div class="item border-danger color-danger">
-                        <span class="icon">
-                            <i class="fas fa-code"></i>
-                        </span>
-                        <span class="name">Web Designing</span>
-                    </div>
-                    <div class="item border-warning color-warning">
+                    <div class="item border-warning color-warning backend" onclick="showProject('backend')">
                         <span class="icon">
                             <i class="fas fa-terminal"></i>
                         </span>
                         <span class="name">Software Development</span>
                     </div>
+                    <div class="item border-danger color-danger frontend" onclick="showProject('frontend')">
+                        <span class="icon">
+                            <i class="fas fa-code"></i>
+                        </span>
+                        <span class="name">Web Designing</span>
+                    </div>
+                </div>
+                <div class="project d-none">
+                    <div class="item d-none frontend">
+                        <div class="image">
+                            <img src="./img/portfolio.png" alt="Project">
+                        </div>
+                        <div class="desc">
+                            <h3><a href="https://github.com/tranvdat/tranvdat.github.io">Web Portfolio</a></h3>
+                            <p>Web Portfolio to showcase acadmics, skills, projects and contact details in better manner.</p>
+                        </div>
+                    </div>
+                    <div class="item d-none frontend">
+                        <div class="image">
+                            <img src="./img/product-intro.png" alt="Project">
+                        </div>
+                        <div class="desc">
+                            <h3><a href="https://cakhodacsan.com">Product Intro Website</a></h3>
+                            <p>Responsive product landing page, product launch, marketing and showcase. eCommerce lead generation landing page.</p>
+                        </div>
+                    </div>
+                    <div class="item d-none backend frontend">
+                        <div class="image">
+                            <img src="./img/e-commerce.jpg" alt="Project">
+                        </div>
+                        <div class="desc">
+                            <h3><a href="https://github.com/tranvdat/xay-dung-website-ban-hang">E-commerce website</a></h3>
+                            <p>An online store with all the tools you need to build, manage, and grow your business. This store in minutes with shipping, tax, payment, advertising options ready.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item d-none backend">
+                        <div class="image">
+                            <img src="./img/timesheet.png" alt="Project">
+                        </div>
+                        <div class="desc">
+                            <h3><a href="https://github.com/tranvdat/TimeSheet-Manager">TimeSheet Management</a></h3>
+                            <p>Keep your projects under control and manage employee time. From any device, anywhere. Track time & forecast productivity.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="hire">
                     <p>You will be happy to know that I have completed over 10+ projects successfully!</p>
-                </div>
-                <div class="project">
-                    <div class="item">
-                        <div class="image">
-                            <img src="./img/avata.jpg" alt="Project">
-                        </div>
-                        <div class="desc">
-                            <h3>Name Project</h3>
-                            <p>Aute ad quis incididunt aliqua cillum. Do reprehenderit quis consectetur deserunt voluptate esse excepteur ipsum esse duis. Officia cillum anim cillum officia duis.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <img src="./img/avata.jpg" alt="Project">
-                        </div>
-                        <div class="desc">
-                            <h3>Name Project</h3>
-                            <p>Aute ad quis incididunt aliqua cillum. Do reprehenderit quis consectetur deserunt voluptate esse excepteur ipsum esse duis. Officia cillum anim cillum officia duis.</p>
-                        </div>
-                    </div>
-                        <div class="item">
-                        <div class="image">
-                            <img src="./img/avata.jpg" alt="Project">
-                        </div>
-                        <div class="desc">
-                            <h3>Name Project</h3>
-                            <p>Aute ad quis incididunt aliqua cillum. Do reprehenderit quis consectetur deserunt voluptate esse excepteur ipsum esse duis. Officia cillum anim cillum officia duis.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div id="skills">
@@ -149,7 +159,7 @@
                             <i class="fas fa-code"></i>
                         </div>
                         <div class="time-line-content">
-                            <h2><a href="#">Pirago</a><span>June 2020 - Present</span></h2>
+                            <h2><a href="https://pirago.vn/">Pirago Viet Nam Company Limited</a><span>June 2020 - Present</span></h2>
                             <p><strong>Developer</strong>
                                 <br>Developed scalable systems with Laravel frameworks.
                                 <br>Developed single page application used VueJS and jQuery.
