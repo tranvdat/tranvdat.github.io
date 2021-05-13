@@ -35,8 +35,8 @@ tranvdat.github.io/
 ├── js/
 │   ├── jquery-3.2.1.min.js
 │   ├── jquery.easypiechart.min.js
-│   ├── main.js
-│   └── jquery.scrollTop.min.js
+│   ├── jquery.scrollTop.min.js
+│   └── main.js
 ├── img/
 └── README.md
 ```
@@ -53,8 +53,7 @@ Have a bug or a feature request? Please first read the issue guidelines and sear
 
 - ABOUT
 - SKILLS
-- Work Experiences 
-- Education
+- WORK EXPERIENCES + EDUCATION
 - CONTACT
 
 ## Browser Support
