@@ -173,6 +173,8 @@ p {
     font-weight: 300;
     letter-spacing: 2px;
     position: relative;
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 #aside .menu li a::after {
