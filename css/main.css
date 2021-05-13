@@ -239,7 +239,7 @@ p {
 
 .toggle-icon {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     width: 30px;
