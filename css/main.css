@@ -4,14 +4,14 @@
     --purple-color: #a84cb8;
     --gray-color: #8a8a8a;
 
-    --bulma-success-color: #48c774;
-    --bulma-info-color: #209cee;
-    --bulma-warning-color: #ffdd57;
-    --bulma-danger-color: #ff3860;
-    --bulma-primary-color: #00d1b2;
-    --bulma-dark-color: #363636;
-    --bulma-light-color: #f5f5f5;
-    --bulma-link-color: #3273dc;
+    --success-color: #48c774;
+    --info-color: #209cee;
+    --warning-color: #ffdd57;
+    --danger-color: #ff3860;
+    --primary-color: #00d1b2;
+    --dark-color: #363636;
+    --light-color: #f5f5f5;
+    --link-color: #3273dc;
 }
 
 * {
@@ -40,63 +40,63 @@ p {
 }
 
 .background-primary {
-    background-color: var(--bulma-primary-color) !important;
+    background-color: var(--primary-color) !important;
 }
 
 .background-info {
-    background-color: var(--bulma-info-color) !important;
+    background-color: var(--info-color) !important;
 }
 
 .background-warning {
-    background-color: var(--bulma-warning-color) !important;
+    background-color: var(--warning-color) !important;
 }
 
 .background-danger {
-    background-color: var(--bulma-danger-color) !important;
+    background-color: var(--danger-color) !important;
 }
 
 .background-success {
-    background-color: var(--bulma-success-color) !important;
+    background-color: var(--success-color) !important;
 }
 
 .color-primary {
-    color: var(--bulma-primary-color) !important;
+    color: var(--primary-color) !important;
 }
 
 .color-info {
-    color: var(--bulma-info-color) !important;
+    color: var(--info-color) !important;
 }
 
 .color-warning {
-    color: var(--bulma-warning-color) !important;
+    color: var(--warning-color) !important;
 }
 
 .color-danger {
-    color: var(--bulma-danger-color) !important;
+    color: var(--danger-color) !important;
 }
 
 .color-success {
-    color: var(--bulma-success-color) !important;
+    color: var(--success-color) !important;
 }
 
 .border-primary {
-    border-color: var(--bulma-primary-color) !important;
+    border-color: var(--primary-color) !important;
 }
 
 .border-info {
-    border-color: var(--bulma-info-color) !important;
+    border-color: var(--info-color) !important;
 }
 
 .border-warning {
-    border-color: var(--bulma-warning-color) !important;
+    border-color: var(--warning-color) !important;
 }
 
 .border-danger {
-    border-color: var(--bulma-danger-color) !important;
+    border-color: var(--danger-color) !important;
 }
 
 .border-success {
-    border-color: var(--bulma-success-color) !important;
+    border-color: var(--success-color) !important;
 }
 
 .d-none {
@@ -112,7 +112,7 @@ p {
 
 /* Aside CSS */
 #aside {
-    background-color: var(--bulma-primary-color);
+    background-color: var(--primary-color);
     width: 300px;
     height: 100%;
     padding: 3.5rem 0;
@@ -126,7 +126,7 @@ p {
     min-height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: var(--bulma-light-color) 2px solid;
+    border: var(--light-color) 2px solid;
 }
 
 #aside .social-list ul, #aside-toggle .social-list ul {
@@ -154,7 +154,7 @@ p {
     padding-left: 2px;
     padding-top: 2px;
     line-height: 35px;
-    color: var(--bulma-primary-color);
+    color: var(--primary-color);
 }
 
 #aside .menu ul, #aside-toggle .menu ul {
@@ -186,7 +186,7 @@ p {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--bulma-link-color);
+    background-color: var(--link-color);
     visibility: hidden;
     -webkit-transform: scaleX(0);
     -moz-transform: scaleX(0);
@@ -229,7 +229,7 @@ p {
 /* Aside Toggle CSS */
 #aside-toggle {
     display: none;
-    background-color: var(--bulma-primary-color);
+    background-color: var(--primary-color);
     width: 100%;
     height: 100%;
     padding: 3.5rem 0;
@@ -275,7 +275,7 @@ p {
 }
 
 #main #about .info h1 {
-    color: var(--bulma-success-color);
+    color: var(--success-color);
 }
 
 #main #about .box {
@@ -297,8 +297,8 @@ p {
     -ms-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
     -o-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
     box-shadow: 0px 0px 56px -8px rgb(0 0 0 / 17%);
-    color: var(--bulma-primary-color);
-    border-bottom: 2px solid var(--bulma-primary-color);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
     cursor: pointer;
 }
 
@@ -324,7 +324,7 @@ p {
 }
 
 #main #about .hire {
-    background-color: var(--bulma-primary-color);
+    background-color: var(--primary-color);
     padding: 1.5rem;
     margin: 30px 0;
 }
@@ -347,7 +347,7 @@ p {
     display: flex;
     width: 48%;
     margin: 10px 0;
-    border: 1px solid var(--bulma-success-color);
+    border: 1px solid var(--success-color);
 }
 
 #main #about .project .item:hover {
@@ -449,12 +449,12 @@ p {
     position: absolute;
     bottom: 8px;
     left: var(--percent);
-    color: var(--bulma-primary-color);
+    color: var(--primary-color);
 }
 
 #main #skills .progress .progress-wrap .progress-bar {
     height: 8px;
-    background-color: var(--bulma-primary-color);
+    background-color: var(--primary-color);
     width: var(--percent);
     border-radius: 5px;
     z-index: 1;
@@ -465,7 +465,7 @@ p {
     position: absolute;
     height: 8px;
     width: 100%;
-    background-color: var(--bulma-light-color);
+    background-color: var(--light-color);
     bottom: 0;
 }
 
@@ -478,7 +478,7 @@ p {
     position: absolute;
     display: block;
     width: 5px;
-    background: var(--bulma-warning-color);
+    background: var(--warning-color);
     top: 20px;
     bottom: 20px;
     margin-left: 30px;
@@ -489,7 +489,7 @@ p {
     margin-left: 65px;
     padding: 30px;
     padding-top: 10px;
-    background-color: var(--bulma-primary-color);
+    background-color: var(--primary-color);
     position: relative;
 }
 
@@ -505,7 +505,7 @@ p {
     position: absolute;
     left: -50px;
     top: 0;
-    color: var(--bulma-light-color);
+    color: var(--light-color);
     font-size: 1.4rem;
     line-height: 1.6rem;
     text-align: center;
@@ -516,14 +516,14 @@ p {
         -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    background-color: var(--bulma-info-color);
+    background-color: var(--info-color);
     -moz-box-shadow: 0 0 0 5px #f2f3f7;
     -webkit-box-shadow: 0 0 0 5px #f2f3f7;
     box-shadow: 0 0 0 5px #f2f3f7;
 }
 
 #time-line .time-line-start .time-line-icon {
-    background-color: var(--bulma-danger-color);
+    background-color: var(--danger-color);
 }
 
 #time-line .time-line-content h2 a {
@@ -567,7 +567,7 @@ p {
 
 #main .contact .content p a {
     text-decoration: none;
-    color: var(--bulma-primary-color);
+    color: var(--primary-color);
 }
 
 #main .contact .content .social-list {
@@ -586,7 +586,7 @@ p {
 }
 
 #main .contact .content .social-list li a i:hover {
-    color: var(--bulma-primary-color);
+    color: var(--primary-color);
 }
 
 @media (max-width: 1024px) {
