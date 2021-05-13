@@ -2,6 +2,7 @@
     --text-color: #333;
     --black-color: #000;
     --purple-color: #a84cb8;
+    --gray-color: #8a8a8a;
 
     --bulma-success-color: #48c774;
     --bulma-info-color: #209cee;
@@ -32,12 +33,6 @@ body {
 
 p {
     font-size: 1.6rem;
-}
-
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
 }
 
 .text-center {
@@ -110,6 +105,9 @@ p {
 
 .content {
     display: flex;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 /* Aside CSS */
@@ -127,6 +125,34 @@ p {
     object-fit: cover;
     border-radius: 50%;
     border: var(--bulma-light-color) 2px solid;
+}
+
+#aside .social-list ul {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 5rem;
+}
+
+#aside .social-list ul li {
+    list-style-type: none;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 5px;
+}
+
+#aside .social-list ul li:hover {
+    background-color: rgba(255,255,255,0.8);;
+}
+
+#aside .social-list ul li a{
+    font-size: 2rem;
+    padding-left: 2px;
+    padding-top: 2px;
+    line-height: 35px;
+    color: var(--bulma-primary-color);
 }
 
 #aside .menu ul {
@@ -200,7 +226,7 @@ p {
 
 #main {
     width: 100%;
-    padding: 5rem 0 5rem 35rem;
+    padding: 5rem 1rem 5rem 35rem;
 }
 
 #main .info {
@@ -326,6 +352,7 @@ p {
 
 #main #skills .progress .progress-chart {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -402,6 +429,124 @@ p {
     bottom: 0;
 }
 
+#time-line {
+    position: relative;
+}
+
+#time-line::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 5px;
+    background: var(--bulma-warning-color);
+    top: 20px;
+    bottom: 20px;
+    margin-left: 30px;
+}
+
+#time-line .time-line-entry {
+    margin: 10px;
+    margin-left: 65px;
+    padding: 30px;
+    padding-top: 10px;
+    background-color: var(--bulma-primary-color);
+    position: relative;
+}
+
+#time-line .time-line-start {
+    background-color: none;
+    margin: 10px;
+    margin-left: 65px;
+    padding: 30px;
+    position: relative;
+}
+
+#time-line.time-line--primary .time-line-icon {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    color: var(--bulma-light-color);
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 50%;
+        -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    background-color: var(--bulma-info-color);
+    -moz-box-shadow: 0 0 0 5px #f2f3f7;
+    -webkit-box-shadow: 0 0 0 5px #f2f3f7;
+    box-shadow: 0 0 0 5px #f2f3f7;
+}
+
+#time-line .time-line-start .time-line-icon {
+    background-color: var(--bulma-danger-color);
+}
+
+#time-line .time-line-content h2 a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+#time-line .time-line-content h2 span {
+    font-size: 1.6rem;
+    font-weight: 300;
+    opacity: .5;
+
+    margin-left: 2rem;
+}
+
+#time-line .time-line-content p strong {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#time-line .time-line-content p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+#main .contact .info {
+    margin-bottom: 3rem;
+}
+
+#main .contact .content {
+    display: flex;
+    flex-direction: column;
+}
+
+#main .contact .content p {
+    line-height: 2.2rem
+}
+
+#main .contact .content p a {
+    text-decoration: none;
+    color: var(--bulma-primary-color);
+}
+
+#main .contact .content .social-list {
+    display: flex;
+    padding: 0;
+}
+
+#main .contact .content .social-list li {
+    list-style-type: none;
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+
+#main .contact .content .social-list li a i {
+    color: var(--gray-color);
+}
+
+#main .contact .content .social-list li a i:hover {
+    color: var(--bulma-primary-color);
+}
 @media (max-width: 1024px) {
     #main #about .box .item {
         width: 100%;;

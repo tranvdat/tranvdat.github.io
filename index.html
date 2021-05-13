@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trần Văn Đạt</title>
+    <title>Tran Van Dat</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -12,128 +12,203 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <div class="grid">
-        <div class="content">
-            <section class="aside text-center" id="aside">
+    <div class="content">
+        <section class="aside text-center" id="aside">
+            <div class="info">
+                <img src="./img/avata.jpg" alt="Avatar">
+                <h1>Tran Van Dat</h1>
+            </div>
+            <div class="social-list">
+                <ul>
+                    <li><a href="https://github.com/tranvdat" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/tr%E1%BA%A7n-%C4%91%E1%BA%A1t-543625138/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.facebook.com/tran.dat.bk/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/trandat_hust" target="_blank"><i class="fab fa-twitter"></i><a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="active"><a>About</a></li>
+                    <li><a>Skills</a></li>
+                    <li><a>Work Experience</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="main" id="main">
+            <div id="about">
                 <div class="info">
-                    <img src="./img/avata.jpg" alt="Avatar">
-                    <h1>Trần Văn Đạt</h1>
+                    <h1>Tran Van Dat</h1>
+                    <p>Hi, Welcome to my portfolio.</p>
+                    <p>I'm a software developer from VietNamese.</p>
                 </div>
-                <div class="menu">
-                    <ul>
-                        <li class="active"><a>About</a></li>
-                        <li><a>Skills</a></li>
-                        <li><a>Work Experience</a></li>
-                        <li><a>Contact</a></li>
+                <div class="box">
+                    <div class="item active border-primary color-primary">
+                        <span class="icon">
+                            <i class="fas fa-desktop"></i>
+                        </span>
+                        <span class="name">Programming Profile</span>
+                    </div>
+                    <div class="item border-danger color-danger">
+                        <span class="icon">
+                            <i class="fas fa-code"></i>
+                        </span>
+                        <span class="name">Web Designing</span>
+                    </div>
+                    <div class="item border-warning color-warning">
+                        <span class="icon">
+                            <i class="fas fa-terminal"></i>
+                        </span>
+                        <span class="name">Software Development</span>
+                    </div>
+                </div>
+                <div class="hire">
+                    <p>You will be happy to know that I have completed over 10+ projects successfully!</p>
+                </div>
+                <div class="project">
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/avata.jpg" alt="Project">
+                        </div>
+                        <div class="desc">
+                            <h3>Name Project</h3>
+                            <p>Aute ad quis incididunt aliqua cillum. Do reprehenderit quis consectetur deserunt voluptate esse excepteur ipsum esse duis. Officia cillum anim cillum officia duis.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/avata.jpg" alt="Project">
+                        </div>
+                        <div class="desc">
+                            <h3>Name Project</h3>
+                            <p>Aute ad quis incididunt aliqua cillum. Do reprehenderit quis consectetur deserunt voluptate esse excepteur ipsum esse duis. Officia cillum anim cillum officia duis.</p>
+                        </div>
+                    </div>
+                        <div class="item">
+                        <div class="image">
+                            <img src="./img/avata.jpg" alt="Project">
+                        </div>
+                        <div class="desc">
+                            <h3>Name Project</h3>
+                            <p>Aute ad quis incididunt aliqua cillum. Do reprehenderit quis consectetur deserunt voluptate esse excepteur ipsum esse duis. Officia cillum anim cillum officia duis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="skills">
+                <div class="info">
+                    <h1>Skills</h1>
+                </div>
+                <div class="progress">
+                    <p class="title">Top Skills</p>
+                    <div class="progress-chart">
+                        <div class="progress-circle">
+                            <div class="chart-primary chart color-primary" data-percent="60"><span>60</span>%</div>
+                            <h4 class="name-skill">Javascript/VueJS</h4>
+                            <p class="level">1.5 years</p>
+                        </div>
+                        <div class="progress-circle">
+                            <div class="chart-danger chart color-danger" data-percent="80"><span>80</span>%</div>
+                            <h4 class="name-skill">PHP/Laravel/MySql</h4>
+                            <p class="level">2 years</p>
+                        </div>
+                        <div class="progress-circle">
+                            <div class="chart-warning chart color-warning" data-percent="70"><span>70</span>%</div>
+                            <h4 class="name-skill">HTML/CSS/Bootstrap</h4>
+                            <p class="level">1.5 years</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="progress">
+                    <p class="title">Other Skills</p>
+                    <div class="progress-wrap">
+                        <p>Algorithms</p>
+                        <span class="percent color-info" style="--percent:60%">60%</span>
+                        <div class="progress-bar background-info" style="--percent:60%"></div>
+                    </div>
+                    <div class="progress-wrap">
+                        <p>Teamwork/Communication</p>
+                        <span class="percent color-danger" style="--percent:95%">95%</span>
+                        <div class="progress-bar background-danger" style="--percent:95%"></div>
+                    </div>
+                    <div class="progress-wrap">
+                        <p>Word/Excel/Photoshop</p>
+                        <span class="percent color-success" style="--percent:50%">50%</span>
+                        <div class="progress-bar background-success" style="--percent:50%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="work-experirence">
+                <div class="info">
+                    <h1>Work Experience</h1>
+                </div>
+                <div id="time-line" class="time-line--primary" >
+                    <div class="time-line-entry">
+                        <div class="time-line-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="time-line-content">
+                            <h2><a href="#">Pirago</a><span>June 2020 - Present</span></h2>
+                            <p><strong>Developer</strong>
+                                <br>Developed scalable systems with Laravel frameworks.
+                                <br>Developed single page application used VueJS and jQuery.
+                                <br>Developed Jquery plugins for custom requirements.
+                                <br>Used MySQL for data.</p>
+                        </div>
+                    </div>
+                    <div class="time-line-entry">
+                        <div class="time-line-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="time-line-content">
+                            <h2><a href="http://skymapglobal.vn/">Skymap High Technology Company Limited</a><span>July 2019 - October 2019</span></h2>
+                            <p><strong>Software Development Engineering Intern</strong><br>Developed Customer Web Application.</p>
+                        </div>
+                    </div>
+                    <div class="time-line-start">
+                        <div class="time-line-icon">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="education">
+                <div class="info">
+                    <h1>Education</h1>
+                </div>
+                <div id="time-line" class="time-line--primary" >
+                    <div class="time-line-entry">
+                        <div class="time-line-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="time-line-content">
+                            <h2><a href="#">Hanoi University of Science and Technology</a></h2>
+                            <p><strong>Mathematics and Informatics</strong><br>Courses undertaken Data Strucutures and Algorithms, Operating Systems, Database Management Systems, Networks, Distributed Computing, Object Oriented Programming, Computer Architecture.</p>
+                        </div>
+                    </div>
+                    <div class="time-line-start">
+                        <div class="time-line-icon">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="info">
+                    <h1>Get in Touch</h1>
+                </div>
+                <div class="content">
+                    <p>On the off chance that you might want to connect with me, be it for investigating innovation, business, or to simply say hello, don't hesitate to send me an email at <a href="mailto:trandat.hust@gmail.com">trandat.hust@gmail.com</a> or call me at <a href="tel:0352888056">0352 888 056</a></p>
+                    <ul class="social-list">
+                        <li><a href="https://github.com/tranvdat" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/tr%E1%BA%A7n-%C4%91%E1%BA%A1t-543625138/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.facebook.com/tran.dat.bk/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/trandat_hust" target="_blank"><i class="fab fa-twitter"></i><a></li>
                     </ul>
                 </div>
-            </section>
-            <section class="main" id="main">
-                <div id="about">
-                    <div class="info">
-                        <h1>Trần Văn Đạt</h1>
-                        <p>Hi, Welcome to my portfolio.</p>
-                        <p>I'm a software developer from VietNamese.</p>
-                    </div>
-                    <div class="box">
-                        <div class="item active border-primary color-primary">
-                            <span class="icon">
-                                <i class="fas fa-desktop"></i>
-                            </span>
-                            <span class="name">Programming Profile</span>
-                        </div>
-                        <div class="item border-danger color-danger">
-                            <span class="icon">
-                                <i class="fas fa-code"></i>
-                            </span>
-                            <span class="name">Web Designing</span>
-                        </div>
-                        <div class="item border-warning color-warning">
-                            <span class="icon">
-                                <i class="fas fa-terminal"></i>
-                            </span>
-                            <span class="name">Software Development</span>
-                        </div>
-                    </div>
-                    <div class="hire">
-                        <p>You will be happy to know that I have completed over 10+ projects successfully!</p>
-                    </div>
-                    <div class="project">
-                        <div class="item">
-                            <div class="image">
-                                <img src="./img/avata.jpg" alt="Project">
-                            </div>
-                            <div class="desc">
-                                <h3>Name Project</h3>
-                                <p>Aute ad quis incididunt aliqua cillum. Do reprehenderit quis consectetur deserunt voluptate esse excepteur ipsum esse duis. Officia cillum anim cillum officia duis.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="./img/avata.jpg" alt="Project">
-                            </div>
-                            <div class="desc">
-                                <h3>Name Project</h3>
-                                <p>Aute ad quis incididunt aliqua cillum. Do reprehenderit quis consectetur deserunt voluptate esse excepteur ipsum esse duis. Officia cillum anim cillum officia duis.</p>
-                            </div>
-                        </div>
-                         <div class="item">
-                            <div class="image">
-                                <img src="./img/avata.jpg" alt="Project">
-                            </div>
-                            <div class="desc">
-                                <h3>Name Project</h3>
-                                <p>Aute ad quis incididunt aliqua cillum. Do reprehenderit quis consectetur deserunt voluptate esse excepteur ipsum esse duis. Officia cillum anim cillum officia duis.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="skills">
-                    <div class="info">
-                        <h1>Skills</h1>
-                    </div>
-                    <div class="progress">
-                        <p class="title">Top Skills</p>
-                        <div class="progress-chart">
-                            <div class="progress-circle">
-                                <div class="chart-primary chart" data-percent="60"><span>60</span>%</div>
-                                <h4 class="name-skill">Javascript/VueJS</h4>
-                                <p class="level">1.5 years</p>
-                            </div>
-                            <div class="progress-circle">
-                                <div class="chart-danger chart" data-percent="80"><span>80</span>%</div>
-                                <h4 class="name-skill">PHP/Laravel/MySql</h4>
-                                <p class="level">2 years</p>
-                            </div>
-                            <div class="progress-circle">
-                                <div class="chart-warning chart" data-percent="70"><span>70</span>%</div>
-                                <h4 class="name-skill">HTML/CSS/Bootstrap</h4>
-                                <p class="level">1.5 years</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="progress">
-                        <p class="title">Other Skills</p>
-                        <div class="progress-wrap">
-                            <p>Algorithms</p>
-                            <span class="percent color-info" style="--percent:60%">60%</span>
-                            <div class="progress-bar background-info" style="--percent:60%"></div>
-                        </div>
-                        <div class="progress-wrap">
-                            <p>Teamwork/Communication</p>
-                            <span class="percent color-danger" style="--percent:95%">95%</span>
-                            <div class="progress-bar background-danger" style="--percent:95%"></div>
-                        </div>
-                        <div class="progress-wrap">
-                            <p>Word/Excel/Photoshop</p>
-                            <span class="percent color-success" style="--percent:50%">50%</span>
-                            <div class="progress-bar background-success" style="--percent:50%"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </div>
 
     <!-- Javascript -->
