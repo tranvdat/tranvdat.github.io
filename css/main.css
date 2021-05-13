@@ -272,7 +272,6 @@ p {
 
 #main #about {
     margin: 5rem 0;
-    margin-bottom: 10rem;
 }
 
 #main #about .info h1 {
@@ -384,7 +383,7 @@ p {
     font-size: 1.2rem;
 }
 
-#main #skills {
+#main #about, #main #skills, #main #work-experience, #main #education, #main #contact {
     margin: 5rem 0;
 }
 
@@ -407,8 +406,7 @@ p {
 #main #skills .progress .progress-circle {
     text-align: center;
     width: 180px;
-    margin-bottom: 3rem;
-    margin-top: 3.2rem;
+    margin: 3rem auto;
 }
 
 #main #skills .progress .progress-circle .chart {
