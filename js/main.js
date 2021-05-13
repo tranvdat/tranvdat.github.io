@@ -120,3 +120,30 @@ function showProject(status) {
             break;
     }
 }
+
+// Responsive Menu Aside
+const $aside = $('#aside');
+let $asideToggle = $aside.clone();
+$asideToggle = $asideToggle.removeClass('aside').addClass('aside-toggle').addClass('d-none').attr('id', 'aside-toggle');
+
+let html = `<div class="toggle-icon" onclick="closeToggleMenu()"><i class="fas fa-bars"></i></div>`;
+$aside.after(html);
+
+$aside.after($asideToggle);
+//add onclick function closeToggleMenu to tag <a></a>
+let $asideToggleA = document.querySelectorAll('#aside-toggle .menu a.scrollTo');
+$asideToggleA.forEach(function(item) {
+    item.setAttribute('onclick', 'closeToggleMenu()');
+})
+
+function closeToggleMenu() {
+    //display
+    let $asideToggle = $('#aside-toggle');
+    if ($asideToggle.hasClass('d-none')) {
+        $asideToggle.removeClass('d-none');
+        $('.toggle-icon i').removeClass('fas fa-bars').addClass('fas fa-times');
+    } else {
+        $asideToggle.addClass('d-none');
+        $('.toggle-icon i').removeClass('fas fa-times').addClass('fas fa-bars');
+    }
+}

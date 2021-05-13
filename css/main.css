@@ -119,9 +119,7 @@ p {
     position: fixed;
 }
 
-
-
-#aside .info img {
+#aside .info img, #aside-toggle .info img {
     max-width: 150px;
     max-height: 150px;
     min-width: 150px;
@@ -131,13 +129,13 @@ p {
     border: var(--bulma-light-color) 2px solid;
 }
 
-#aside .social-list ul {
+#aside .social-list ul, #aside-toggle .social-list ul {
     display: flex;
     justify-content: center;
     padding: 2rem 5rem;
 }
 
-#aside .social-list ul li {
+#aside .social-list ul li, #aside-toggle .social-list ul li {
     list-style-type: none;
     background-color: #fff;
     width: 35px;
@@ -147,11 +145,11 @@ p {
     margin: 0 5px;
 }
 
-#aside .social-list ul li:hover {
+#aside .social-list ul li:hover, #aside-toggle .social-list ul li:hover {
     background-color: rgba(255,255,255,0.8);;
 }
 
-#aside .social-list ul li a{
+#aside .social-list ul li a, #aside-toggle .social-list ul li a {
     font-size: 2rem;
     padding-left: 2px;
     padding-top: 2px;
@@ -159,18 +157,18 @@ p {
     color: var(--bulma-primary-color);
 }
 
-#aside .menu ul {
+#aside .menu ul, #aside-toggle .menu ul {
     padding: 0;
     padding-top: 2rem;
 }
 
-#aside .menu li {
+#aside .menu li, #aside-toggle .menu li {
     list-style-type: none;
     margin: 2rem 0;
     cursor: pointer;
 }
 
-#aside .menu li a{
+#aside .menu li a, #aside-toggle .menu li a {
     text-transform: uppercase;
     margin: 2rem 0;
     font-size: 1.2rem;
@@ -181,7 +179,7 @@ p {
     color: var(--text-color);
 }
 
-#aside .menu li a::after {
+#aside .menu li a::after, #aside-toggle .menu li a::after {
     content: "";
     position: absolute;
     height: 1px;
@@ -202,11 +200,11 @@ p {
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-#aside .menu li:hover a, #aside .menu li.active a{
+#aside .menu li:hover a, #aside .menu li.active a, #aside-toggle .menu li:hover a, #aside-toggle .menu li.active a{
     font-weight: 400;
 }
 
-#aside .menu li:hover a::after {
+#aside .menu li:hover a::after, #aside-toggle .menu li:hover a::after {
     visibility: visible;
     -webkit-transform: scaleX(1);
     -moz-transform: scaleX(1);
@@ -215,11 +213,11 @@ p {
     transform: scaleX(1);
 }
 
-#aside .menu li.active {
+#aside .menu li.active, #aside-toggle .menu li.active {
     color: var(--green-color);
 }
 
-#aside .menu li.active a::after {
+#aside .menu li.active a::after, #aside-toggle .menu li.active a::after {
     visibility: visible;
     -webkit-transform: scaleX(1);
     -moz-transform: scaleX(1);
@@ -228,6 +226,28 @@ p {
     transform: scaleX(1);
 }
 
+/* Aside Toggle CSS */
+#aside-toggle {
+    display: none;
+    background-color: var(--bulma-primary-color);
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 0;
+    position: fixed;
+    z-index: 2;
+}
+
+.toggle-icon {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 2px;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 3;
+}
 /* Main CSS */
 
 #main {
@@ -324,10 +344,19 @@ p {
 }
 
 #main #about .project .item {
+    cursor: pointer;
     display: flex;
     width: 48%;
     margin: 10px 0;
     border: 1px solid var(--bulma-success-color);
+}
+
+#main #about .project .item:hover {
+    -webkit-box-shadow: 0px 0px 56px -8px rgb(0 0 0 / 17%);
+    -moz-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    -ms-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    -o-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 56px -8px rgb(0 0 0 / 17%);
 }
 
 #main #about .project .item .image img {
@@ -503,6 +532,7 @@ p {
     text-decoration: none;
     color: var(--black-color);
     font-size: 2.2rem;
+    line-height: 2.8rem;
     font-weight: 400;
 }
 
@@ -571,10 +601,15 @@ p {
     }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 768px) {
     #aside {
         display: none;
     }
+
+    #aside-toggle, .toggle-icon {
+        display: block;
+    }
+
     #main {
         padding: 5rem;
     }
